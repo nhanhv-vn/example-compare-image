@@ -15,3 +15,6 @@
     + Zoom out/ Zoon in line width of slider
     + Change color of slider
     + Switch vertically and horizontally to compare image
+
+Example;
+![Example][Example.png]
