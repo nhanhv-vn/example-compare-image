@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
+import leftImage from './assets/photo_800_540.jpg'; 
+import rightImage from './assets/photo_2000_1125.jpg'; 
 import './App.css';
+import { ImagesCompare } from './components/ImagesCompare'; 
 
 function App() {
+  const information = {
+    leftImage: leftImage,
+    rightImage: rightImage,
+    leftImageLabel: '800x540',
+    rightImageLabel: '2000x1125'
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ImagesCompare {...information}/>
     </div>
   );
 }
